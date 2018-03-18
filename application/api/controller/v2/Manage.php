@@ -13,7 +13,6 @@ namespace app\api\controller\v2;
 use app\api\controller\BaseController;
 use app\api\model\Order as OrderModel;
 use app\lib\exception\SuccessReturn;
-use think\Db;
 
 class Manage extends BaseController
 {

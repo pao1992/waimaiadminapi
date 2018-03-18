@@ -163,9 +163,13 @@ Route::group('api/:version/dispatch_point', function () {
     Route::delete('/:id', 'api/:version.Dispatch/deletePoint');
 });
 
-
 //statistic统计
 Route::group('api/:version/statistic',function(){
     Route::get('/sales_volume_bar', 'api/:version.Statistic/salesVolumeBar');
     Route::get('/products_pie', 'api/:version.Statistic/productsPie');
+});
+
+//manage
+Route::group('api/:version/manage',function(){
+    Route::get('/daily_data', 'api/:version.Manage/getDailyData');
 });
